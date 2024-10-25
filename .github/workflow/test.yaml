@@ -1,0 +1,11 @@
+name: 測試 action 失敗
+
+on:
+  workflow_dispatch:
+
+job:
+  test-job:
+    name: 測試job1
+    steps:
+    - run: |
+      echo "hello world"
