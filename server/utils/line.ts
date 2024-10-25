@@ -2,7 +2,6 @@ import { H3Event } from 'h3'
 
 export async function sendLineNotification(message: string, event: H3Event) {
   const config = useRuntimeConfig(event)
-  console.log(`line 權杖:${config.lineNotifyToken}`)
   
   try {
     const response = await fetch('https://notify-api.line.me/api/notify', {
