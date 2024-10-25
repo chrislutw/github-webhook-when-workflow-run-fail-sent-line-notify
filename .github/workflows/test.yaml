@@ -6,6 +6,7 @@ on:
 job:
   test-job:
     name: 測試job1
+    runs-on: ubuntu-latest
     steps:
     - run: |
-      echo "hello world"
+        echo "hello world"
